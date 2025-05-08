@@ -17,7 +17,7 @@ const Trivial = () => {
   const handleAnswer = (answer) => {
     if (answer.isRight) {
       if (quiestionIndex === questions.length - 1) {
-        setPopupVisible(true); // Ganaste
+        setPopupVisible(true);
       } else {
         setQuiestionIndex(quiestionIndex + 1);
       }
@@ -26,7 +26,7 @@ const Trivial = () => {
       setLives(newLives);
 
       if (newLives === 0) {
-        setGameLost(true); // Perdiste
+        setGameLost(true); 
       } else {
         alert('Respuesta incorrecta! Tienes una vida menos! Vuelve a intentarlo');
         setQuiestionIndex(quiestionIndex === 0 ? 0 : quiestionIndex - 1);
